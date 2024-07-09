@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-1LN153W6JZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-1LN153W6JZ");
+    </script>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -18,8 +32,8 @@
     <meta name="author" content="Hencework" />
 
     <!--Favicon-->
-    <link rel="shortcut icon" href="webicon.PNG" />
-    <link rel="icon" href="webicon.PNG" type="image/x-icon" />
+    <link rel="shortcut icon" href="webicon.png" />
+    <link rel="icon" href="webicon.png" type="image/x-icon" />
 
     <!--Fonts-->
     <link
@@ -40,10 +54,11 @@
         height: 150px;
       }
       .client-icon {
-        width: 200px;
-        height: 100px;
+        width: 100px;
+        height: auto;
+        padding-bottom: 20px;
       }
-      .whatsapp-icon{
+      .whatsapp-icon {
         display: block;
         height: auto;
         width: 200px;
@@ -190,8 +205,7 @@
                   class="goto-social"
                   target="_blank"
                   >Instagram.
-                  </a
-                >
+                </a>
               </p>
               <div
                 class="per-signature margin-top-sm wow fadeInUp"
@@ -433,7 +447,7 @@
                   <li
                     class="item"
                     data-src="img/mock1.jpg"
-                    data-sub-html="<h6>DESIGN LAB</h6><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
+                    data-sub-html="<h6>Food Photography</h6>"
                   >
                     <a href="">
                       <img
@@ -448,7 +462,7 @@
                     class="item"
                     data-src="https://youtu.be/ImhkKlFCi08"
                     data-poster="img/mock2.jpg"
-                    data-sub-html="<h6>MODERN WORK</h6><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
+                    data-sub-html="<h6>Digtal Ads</h6>"
                   >
                     <a href="">
                       <img
@@ -456,18 +470,18 @@
                         src="img/mock2.jpg"
                         alt="Image description"
                       />
-                      <span class="hover-cap">Cars Now Digtal AD</span>
+                      <span class="hover-cap">Digtal Ads</span>
                     </a>
                   </li>
                   <li
                     class="item"
-                    data-src="img/liza 2.png"
-                    data-sub-html="<h6>UX PLATFORM</h6><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
+                    data-src="img/LIZA-2.png"
+                    data-sub-html="<h6>Sports Photography</h6>"
                   >
                     <a href="">
                       <img
                         class="img-responsive"
-                        src="img/LIZA 1.PNG"
+                        src="img/LIZA-1.png"
                         alt="Image description"
                       />
                       <span class="hover-cap">Sports Photography</span>
@@ -476,7 +490,7 @@
                   <li
                     class="item"
                     data-src="https://www.youtube.com/wxr1F_mxWz8?feature=share"
-                    data-sub-html="<h6>MONOBRANDING</h6><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
+                    data-sub-html="<h6>VFX</h6>"
                   >
                     <a href="">
                       <img
@@ -484,13 +498,13 @@
                         src="img/mock3.jpg"
                         alt="Image description"
                       />
-                      <span class="hover-cap">Old Dubai Cinematic</span>
+                      <span class="hover-cap">VFX</span>
                     </a>
                   </li>
                   <li
                     class="item"
                     data-src="https://youtu.be/j44DIhB_OmU"
-                    data-sub-html="<h6>FALL/WINTER</h6><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
+                    data-sub-html="<h6>Cinematic</h6>"
                   >
                     <a href="">
                       <img
@@ -498,13 +512,13 @@
                         src="img/edwin.jpg"
                         alt="Image description"
                       />
-                      <span class="hover-cap">UFC Gym ad</span>
+                      <span class="hover-cap">Cinematic</span>
                     </a>
                   </li>
                   <li
                     class="item"
                     data-src="https://youtu.be/x2rBZLGfwPc"
-                    data-sub-html="<h6>FANTASTIC MAN</h6><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
+                    data-sub-html="<h6>Wedding Photography</h6>"
                   >
                     <a href="">
                       <img
@@ -512,7 +526,7 @@
                         src="img/rachelle.jpg"
                         alt="Image description"
                       />
-                      <span class="hover-cap">Rachelle weds Mazen</span>
+                      <span class="hover-cap">Wedding Photography</span>
                     </a>
                   </li>
                 </ul>
@@ -794,13 +808,21 @@
               data-wow-duration=".4s"
             >
               <h6>clients</h6>
-              <div class="client-icon">
-                <img src="img/client6.png" alt="client" />
-                <!-- <img src="img/client2.png" alt="client" />
-                <img src="img/client3.png" alt="client" />
-                <img src="img/client4.png" alt="client" />
-                <img src="img/client5.svg" alt="client" />
-                <img src="img/client2.png" alt="client" /> -->
+              <div
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-around;
+                  align-items: center;
+                  flex-wrap: wrap;
+                "
+              >
+                <!-- <img src="img/client6.png" alt="client" /> -->
+                <img class="client-icon" src="img/client1.png" alt="client" />
+                <img class="client-icon" src="img/client2.png" alt="client" />
+                <img class="client-icon" src="img/client3.png" alt="client" />
+                <img class="client-icon" src="img/client4.png" alt="client" />
+                <img class="client-icon" src="img/client5.svg" alt="client" />
               </div>
             </section>
             <!--/Client Sec-->
@@ -937,7 +959,7 @@
                   love to hear from you.
                 </h3>
                 <!-- <div> -->
-                  <!-- <form
+                <!-- <form
                     data-ng-submit="submit(contactform, $event)"
                     name="contactform"
                     method="post"
@@ -1016,7 +1038,7 @@
                       </div>
                     </div>
                   </form> -->
-                  <!-- <p data-ng-class="result">{{ resultMessage }}</p>
+                <!-- <p data-ng-class="result">{{ resultMessage }}</p>
                 </div> -->
               </div>
               <div class="email-direct">
@@ -1024,23 +1046,26 @@
                   Leave me a Meassage on my Whatsapp
                 </p>
               </div>
-                <a
-                  href="https://wa.me/971505441914?text=Hello%20Kashan!"
-                  target="_blank"
-                  class="whatsapp-icon"
-                >
+              <a
+                href="https://wa.me/971505441914?text=Hello%20Kashan!"
+                target="_blank"
+                class="whatsapp-icon"
+              >
                 <img
-                class="img-responsive"
-                src="img/whatsapp-icon.png"
-                alt="whatsapp-icon"
-              />
-                </a>
-            <p class="wow fadeInRight" data-wow-duration=".4s">
-              Or simply email me at
-              <a href="mailto:kashanamjad1113@gmail.com" style="color:#e91e63;"
-                >kashanamjad1113@gmail.com</a>
-            </p>
-          </section>
+                  class="img-responsive"
+                  src="img/whatsapp-icon.png"
+                  alt="whatsapp-icon"
+                />
+              </a>
+              <p class="wow fadeInRight" data-wow-duration=".4s">
+                Or simply email me at
+                <a
+                  href="mailto:kashanamjad1113@gmail.com"
+                  style="color: #e91e63"
+                  >kashanamjad1113@gmail.com</a
+                >
+              </p>
+            </section>
             <!--Contact Sec-->
 
             <hr class="separater-hr" />
