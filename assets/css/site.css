@@ -168,8 +168,8 @@ button.hero-media{display:block;width:100%;text-align:left}
 /* ---------- about ---------- */
 .about{display:grid;grid-template-columns:minmax(300px,520px) 1fr;gap:clamp(32px,6vw,80px);padding:40px var(--pad) 80px}
 .about .pics{position:relative;align-self:start}
-.about .pics .main{aspect-ratio:4/5;border-radius:6px;background:var(--bg2) 30% center/cover no-repeat}
-.about .pics .small{position:absolute;right:-28px;bottom:-36px;width:44%;aspect-ratio:4/5;border-radius:6px;border:6px solid var(--bg);background:var(--bg2) center/cover no-repeat}
+.about .pics .main{aspect-ratio:4/5;border-radius:6px;background:var(--bg2) 50% 35%/cover no-repeat}
+.about .pics .small{position:absolute;right:-28px;bottom:-40px;width:34%;aspect-ratio:4/5;border-radius:6px;border:5px solid var(--bg);background:var(--bg2) 18% 40%/cover no-repeat;box-shadow:0 20px 40px -12px rgba(0,0,0,.6)}
 .about h1{font-size:clamp(40px,4.6vw,68px);line-height:1.02;font-weight:700;font-stretch:78%;margin-top:16px}
 .about h1 .serif{font-weight:400}
 .about .bio p{margin-top:18px;font-size:17px;line-height:1.7;color:var(--soft);max-width:680px}
@@ -234,7 +234,6 @@ button.hero-media{display:block;width:100%;text-align:left}
   .p-info{position:static}
   .about{grid-template-columns:1fr}
   .about .pics{max-width:420px}
-  .about .pics .small{right:-8px}
   .skills,.facts-row{grid-template-columns:1fr}
   .xp li{grid-template-columns:1fr;gap:4px}
   .stills{columns:1}
@@ -318,3 +317,5 @@ button.hero-media{display:block;width:100%;text-align:left}
   .intro .copy{padding:0 20px 24px;margin-top:-36px}
   .intro h1{margin-top:12px}
 }
+
+@media (max-width:860px){ .about .pics .small{right:-8px;bottom:-24px;width:38%} .about .pics{margin-bottom:24px} }
