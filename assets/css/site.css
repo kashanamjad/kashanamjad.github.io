@@ -319,6 +319,3 @@ button.hero-media{display:block;width:100%;text-align:left}
 }
 
 @media (max-width:860px){ .about .pics .small{right:-8px;bottom:-24px;width:38%} .about .pics{margin-bottom:24px} }
-
-/* About portrait: dark studio version (background replaced) */
-.about .pics .main{background-position:50% 30%}
