@@ -1,0 +1,817 @@
+{
+  "projects": [
+    {
+      "slug": "capital-com",
+      "title": "Capital.com",
+      "subtitle": "Trading, for everyone",
+      "client": "Capital.com",
+      "agency": "Yaz Media",
+      "role": "Director of Photography",
+      "category": "films",
+      "type": "Commercial · 5 films",
+      "orientation": "horizontal",
+      "featured": true,
+      "order": 1,
+      "cover": "/assets/media/covers/cap_tailor.jpg",
+      "cover_focus": "center",
+      "preview": "",
+      "summary": "Five short comedic films: an uncle, a barber, a tailor, a waiter and a bride's father, each talking stocks, gold and crypto with confidence. The idea: trading on Capital.com is simple enough for anyone.",
+      "credits": [
+        "Director of comedy: Khalid"
+      ],
+      "films": [
+        {
+          "title": "The Uncle",
+          "video": "/assets/media/films/capital-com--the-uncle.mp4",
+          "poster": "/assets/media/films/capital-com--the-uncle.jpg",
+          "aspect": "1920:1080",
+          "youtube": ""
+        },
+        {
+          "title": "The Barber",
+          "video": "/assets/media/films/capital-com--the-barber.mp4",
+          "poster": "/assets/media/films/capital-com--the-barber.jpg",
+          "aspect": "1920:1080",
+          "youtube": ""
+        },
+        {
+          "title": "The Tailor",
+          "video": "/assets/media/films/capital-com--the-tailor.mp4",
+          "poster": "/assets/media/films/capital-com--the-tailor.jpg",
+          "aspect": "1920:1080",
+          "youtube": ""
+        },
+        {
+          "title": "The Waiter",
+          "video": "/assets/media/films/capital-com--the-waiter.mp4",
+          "poster": "/assets/media/films/capital-com--the-waiter.jpg",
+          "aspect": "1920:1080",
+          "youtube": ""
+        },
+        {
+          "title": "The Proposal",
+          "video": "/assets/media/films/capital-com--the-proposal.mp4",
+          "poster": "/assets/media/films/capital-com--the-proposal.jpg",
+          "aspect": "1920:1080",
+          "youtube": ""
+        }
+      ],
+      "stills": [
+        "/assets/media/stills/capital-com/01.jpg",
+        "/assets/media/stills/capital-com/02.jpg",
+        "/assets/media/stills/capital-com/03.jpg",
+        "/assets/media/stills/capital-com/04.jpg",
+        "/assets/media/stills/capital-com/05.jpg",
+        "/assets/media/stills/capital-com/06.jpg",
+        "/assets/media/stills/capital-com/07.jpg",
+        "/assets/media/stills/capital-com/08.jpg",
+        "/assets/media/stills/capital-com/09.jpg",
+        "/assets/media/stills/capital-com/10.jpg"
+      ],
+      "show_in_photography": true
+    },
+    {
+      "slug": "dubai-investments-national-day",
+      "title": "Dubai Investments",
+      "subtitle": "National Day film",
+      "client": "Dubai Investments",
+      "agency": "Yaz Media",
+      "role": "Production Head & AI Editor",
+      "category": "films",
+      "type": "Film",
+      "orientation": "horizontal",
+      "featured": true,
+      "order": 2,
+      "cover": "/assets/media/covers/di_falcon.jpg",
+      "cover_focus": "center",
+      "preview": "",
+      "summary": "A National Day film celebrating family, heritage and togetherness across the UAE. Told through a warm, narrative-led approach, with AI-generated footage making up around half of the edit.",
+      "credits": [
+        "Camera & audio: Jonatan R, Jose Roy"
+      ],
+      "films": [
+        {
+          "title": "National Day film",
+          "video": "/assets/media/films/dubai-investments-national-day--national-day.mp4",
+          "poster": "/assets/media/films/dubai-investments-national-day--national-day.jpg",
+          "aspect": "1920:1080",
+          "youtube": ""
+        }
+      ],
+      "stills": [
+        "/assets/media/stills/dubai-investments-national-day/02.jpg",
+        "/assets/media/stills/dubai-investments-national-day/03.jpg",
+        "/assets/media/stills/dubai-investments-national-day/04.jpg"
+      ],
+      "show_in_photography": false
+    },
+    {
+      "slug": "lg-shaker",
+      "title": "LG Shaker",
+      "subtitle": "Corporate documentary, Riyadh",
+      "client": "LG Shaker",
+      "agency": "Yaz Media",
+      "role": "Director of Photography",
+      "category": "films",
+      "type": "Documentary",
+      "orientation": "horizontal",
+      "featured": true,
+      "order": 3,
+      "cover": "/assets/media/covers/lg.jpg",
+      "cover_focus": "center",
+      "preview": "",
+      "summary": "A corporate documentary on LG Shaker's production facility in Riyadh and its role in major projects across the city, including the Riyadh Metro and the National Housing Company programme.",
+      "credits": [],
+      "films": [
+        {
+          "title": "Corporate documentary",
+          "video": "/assets/media/films/lg-shaker--documentary.mp4",
+          "poster": "/assets/media/films/lg-shaker--documentary.jpg",
+          "aspect": "1920:1080",
+          "youtube": ""
+        }
+      ],
+      "stills": [
+        "/assets/media/stills/lg-shaker/01.jpg",
+        "/assets/media/stills/lg-shaker/03.jpg",
+        "/assets/media/stills/lg-shaker/04.jpg",
+        "/assets/media/stills/lg-shaker/07.jpg"
+      ],
+      "show_in_photography": false
+    },
+    {
+      "slug": "cars-now",
+      "title": "Cars Now",
+      "subtitle": "Lease to Own",
+      "client": "Cars Now",
+      "agency": "V-Patch",
+      "role": "Director & Cinematographer",
+      "category": "films",
+      "type": "Commercial",
+      "orientation": "horizontal",
+      "featured": true,
+      "order": 4,
+      "cover": "/assets/media/covers/cars.jpg",
+      "cover_focus": "center",
+      "preview": "",
+      "summary": "A launch ad for Cars Now's long-term leasing. A family rents a car, grows attached to it, and has to hand it back when the rental ends — leasing lets them keep the car they love. I handled pre-production, the shoot and post-production.",
+      "credits": [],
+      "films": [
+        {
+          "title": "Lease to Own",
+          "video": "/assets/media/films/cars-now--lease-to-own.mp4",
+          "poster": "/assets/media/films/cars-now--lease-to-own.jpg",
+          "aspect": "1920:1080",
+          "youtube": "ImhkKlFCi08"
+        }
+      ],
+      "stills": [
+        "/assets/media/stills/cars-now/01.jpg",
+        "/assets/media/stills/cars-now/02.jpg",
+        "/assets/media/stills/cars-now/04.jpg"
+      ],
+      "show_in_photography": false
+    },
+    {
+      "slug": "invest-bank",
+      "title": "Invest Bank",
+      "subtitle": "An account in five minutes",
+      "client": "Invest Bank",
+      "agency": "Yaz Media",
+      "role": "Director & Cinematographer",
+      "category": "films",
+      "type": "Commercial",
+      "orientation": "horizontal",
+      "featured": true,
+      "order": 5,
+      "cover": "/assets/media/covers/invest.jpg",
+      "cover_focus": "center",
+      "preview": "",
+      "summary": "A lifestyle spot for Invest Bank's digital banking: opening an account takes less time than waiting for your coffee.",
+      "credits": [],
+      "films": [
+        {
+          "title": "An account in five minutes",
+          "video": "/assets/media/films/invest-bank--five-minutes.mp4",
+          "poster": "/assets/media/films/invest-bank--five-minutes.jpg",
+          "aspect": "1920:1080",
+          "youtube": ""
+        }
+      ],
+      "stills": [
+        "/assets/media/stills/invest-bank/01.jpg",
+        "/assets/media/stills/invest-bank/02.jpg",
+        "/assets/media/stills/invest-bank/03.jpg"
+      ],
+      "show_in_photography": false
+    },
+    {
+      "slug": "the-fitout",
+      "title": "The Fitout",
+      "subtitle": "Cape Hayat, Carlton & ORA",
+      "client": "The Fitout",
+      "agency": "The ArtKash",
+      "role": "Camera, edit & photography",
+      "category": "interiors",
+      "type": "Interiors · film & photo",
+      "orientation": "horizontal",
+      "featured": true,
+      "order": 6,
+      "cover": "/assets/media/covers/penthouse.jpg",
+      "cover_focus": "center",
+      "preview": "",
+      "summary": "Walkthrough films, social reels and edited photography for interior fit-out projects: the Cape Hayat penthouse and apartments, the Carlton Hotel and ORA Developers.",
+      "credits": [],
+      "films": [
+        {
+          "title": "Cape Hayat penthouse",
+          "video": "/assets/media/films/the-fitout--cape-hayat-penthouse.mp4",
+          "poster": "/assets/media/films/the-fitout--cape-hayat-penthouse.jpg",
+          "aspect": "1920:1080",
+          "youtube": ""
+        },
+        {
+          "title": "Carlton Hotel walkthrough",
+          "video": "/assets/media/films/the-fitout--carlton-hotel.mp4",
+          "poster": "/assets/media/films/the-fitout--carlton-hotel.jpg",
+          "aspect": "1920:1080",
+          "youtube": ""
+        },
+        {
+          "title": "ORA walk-in",
+          "video": "/assets/media/films/the-fitout--ora-walk-in.mp4",
+          "poster": "/assets/media/films/the-fitout--ora-walk-in.jpg",
+          "aspect": "1920:1080",
+          "youtube": ""
+        }
+      ],
+      "stills": [
+        "/assets/media/stills/the-fitout/01.jpg",
+        "/assets/media/stills/the-fitout/02.jpg",
+        "/assets/media/stills/the-fitout/03.jpg",
+        "/assets/media/stills/the-fitout/04.jpg",
+        "/assets/media/stills/the-fitout/05.jpg",
+        "/assets/media/stills/the-fitout/06.jpg",
+        "/assets/media/stills/the-fitout/07.jpg",
+        "/assets/media/stills/the-fitout/08.jpg",
+        "/assets/media/stills/the-fitout/09.jpg",
+        "/assets/media/stills/the-fitout/10.jpg",
+        "/assets/media/stills/the-fitout/11.jpg",
+        "/assets/media/stills/the-fitout/12.jpg",
+        "/assets/media/stills/the-fitout/13.jpg",
+        "/assets/media/stills/the-fitout/14.jpg",
+        "/assets/media/stills/the-fitout/15.jpg",
+        "/assets/media/stills/the-fitout/16.jpg",
+        "/assets/media/stills/the-fitout/17.jpg",
+        "/assets/media/stills/the-fitout/18.jpg",
+        "/assets/media/stills/the-fitout/19.jpg",
+        "/assets/media/stills/the-fitout/20.jpg"
+      ],
+      "show_in_photography": true
+    },
+    {
+      "slug": "art-of-living",
+      "title": "Art of Living",
+      "subtitle": "Brand films & reels",
+      "client": "Art of Living",
+      "agency": "Yaz Media",
+      "role": "Videographer, editor & photographer",
+      "category": "films",
+      "type": "Brand",
+      "orientation": "horizontal",
+      "featured": true,
+      "order": 7,
+      "cover": "/assets/media/covers/aol.jpg",
+      "cover_focus": "center",
+      "preview": "",
+      "summary": "Hero films, social reels and stop-motion pieces for Art of Living.",
+      "credits": [],
+      "films": [
+        {
+          "title": "Hero film",
+          "video": "/assets/media/films/art-of-living--hero-film.mp4",
+          "poster": "/assets/media/films/art-of-living--hero-film.jpg",
+          "aspect": "1920:1080",
+          "youtube": ""
+        },
+        {
+          "title": "Showroom film",
+          "video": "/assets/media/films/art-of-living--hero-film-2.mp4",
+          "poster": "/assets/media/films/art-of-living--hero-film-2.jpg",
+          "aspect": "1920:1080",
+          "youtube": ""
+        },
+        {
+          "title": "Art of Impact",
+          "video": "/assets/media/films/art-of-living--art-of-impact.mp4",
+          "poster": "/assets/media/films/art-of-living--art-of-impact.jpg",
+          "aspect": "1080:1920",
+          "youtube": ""
+        },
+        {
+          "title": "Emirati Women's Day",
+          "video": "/assets/media/films/art-of-living--emirati-womens-day.mp4",
+          "poster": "/assets/media/films/art-of-living--emirati-womens-day.jpg",
+          "aspect": "1080:1920",
+          "youtube": ""
+        },
+        {
+          "title": "Art of Comfort",
+          "video": "/assets/media/films/art-of-living--art-of-comfort.mp4",
+          "poster": "/assets/media/films/art-of-living--art-of-comfort.jpg",
+          "aspect": "1080:1920",
+          "youtube": ""
+        },
+        {
+          "title": "Sofa stop-motion",
+          "video": "/assets/media/films/art-of-living--sofa-stop-motion.mp4",
+          "poster": "/assets/media/films/art-of-living--sofa-stop-motion.jpg",
+          "aspect": "1080:1920",
+          "youtube": ""
+        },
+        {
+          "title": "Dubai Summer Surprises",
+          "video": "/assets/media/films/art-of-living--summer-surprises.mp4",
+          "poster": "/assets/media/films/art-of-living--summer-surprises.jpg",
+          "aspect": "1080:1920",
+          "youtube": ""
+        }
+      ],
+      "stills": [
+        "/assets/media/stills/art-of-living/01.jpg",
+        "/assets/media/stills/art-of-living/04.jpg",
+        "/assets/media/stills/art-of-living/06.jpg"
+      ],
+      "show_in_photography": false
+    },
+    {
+      "slug": "coursinity",
+      "title": "Coursinity",
+      "subtitle": "Training campaign",
+      "client": "Coursinity",
+      "agency": "Yaz Media",
+      "role": "Camera & audio",
+      "category": "films",
+      "type": "Commercial",
+      "orientation": "horizontal",
+      "featured": true,
+      "order": 8,
+      "cover": "/assets/media/covers/coursinity.jpg",
+      "cover_focus": "center",
+      "preview": "",
+      "summary": "Three scenario-based spots promoting Coursinity's management training — multitasking, time and record management, and brainstorming — with a local cast to keep them relatable.",
+      "credits": [],
+      "films": [
+        {
+          "title": "The Multitasker",
+          "video": "/assets/media/films/coursinity--the-multitasker.mp4",
+          "poster": "/assets/media/films/coursinity--the-multitasker.jpg",
+          "aspect": "1920:802",
+          "youtube": ""
+        },
+        {
+          "title": "The Marketing Manager",
+          "video": "/assets/media/films/coursinity--the-marketing-manager.mp4",
+          "poster": "/assets/media/films/coursinity--the-marketing-manager.jpg",
+          "aspect": "1080:608",
+          "youtube": ""
+        }
+      ],
+      "stills": [
+        "/assets/media/stills/coursinity/01.jpg",
+        "/assets/media/stills/coursinity/02.jpg",
+        "/assets/media/stills/coursinity/03.jpg"
+      ],
+      "show_in_photography": false
+    },
+    {
+      "slug": "events",
+      "title": "Events",
+      "subtitle": "ECI · Bridge Summit · GITEX · ASF",
+      "client": "Etihad Credit Insurance, Bridge Summit, GITEX 2024, Arab Strategy Forum, Majra, Beeah",
+      "agency": "Yaz Media",
+      "role": "Event coverage: film & photography",
+      "category": "events",
+      "type": "Events & corporate",
+      "orientation": "horizontal",
+      "featured": true,
+      "order": 9,
+      "cover": "/assets/media/covers/bridge.jpg",
+      "cover_focus": "center",
+      "preview": "",
+      "summary": "Event films, highlight reels and photography for government and corporate clients: Etihad Credit Insurance events, the Bridge Summit, GITEX 2024, the Arab Strategy Forum, the Majra Impact Summit and Beeah.",
+      "credits": [],
+      "films": [
+        {
+          "title": "Bridge Summit highlights",
+          "video": "/assets/media/films/events--bridge-summit.mp4",
+          "poster": "/assets/media/films/events--bridge-summit.jpg",
+          "aspect": "1920:1080",
+          "youtube": ""
+        },
+        {
+          "title": "GITEX 2024 reel",
+          "video": "/assets/media/films/events--gitex-2024.mp4",
+          "poster": "/assets/media/films/events--gitex-2024.jpg",
+          "aspect": "1080:1920",
+          "youtube": ""
+        }
+      ],
+      "stills": [
+        "/assets/media/stills/events/01.jpg",
+        "/assets/media/stills/events/02.jpg",
+        "/assets/media/stills/events/03.jpg",
+        "/assets/media/stills/events/04.jpg",
+        "/assets/media/stills/events/05.jpg",
+        "/assets/media/stills/events/06.jpg",
+        "/assets/media/stills/events/07.jpg",
+        "/assets/media/stills/events/08.jpg",
+        "/assets/media/stills/events/09.jpg",
+        "/assets/media/stills/events/10.jpg",
+        "/assets/media/stills/events/11.jpg",
+        "/assets/media/stills/events/12.jpg",
+        "/assets/media/stills/events/13.jpg",
+        "/assets/media/stills/events/14.jpg",
+        "/assets/media/stills/events/15.jpg",
+        "/assets/media/stills/events/16.jpg",
+        "/assets/media/stills/events/17.jpg",
+        "/assets/media/stills/events/18.jpg",
+        "/assets/media/stills/events/19.jpg"
+      ],
+      "show_in_photography": true
+    },
+    {
+      "slug": "arabica",
+      "title": "Arabica",
+      "subtitle": "Coffee — photography & reels",
+      "client": "% Arabica",
+      "agency": "Yaz Media",
+      "role": "Photographer & videographer",
+      "category": "food",
+      "type": "Coffee · photo & reels",
+      "orientation": "vertical",
+      "featured": true,
+      "order": 10,
+      "cover": "/assets/media/covers/arabica.jpg",
+      "cover_focus": "center",
+      "preview": "",
+      "summary": "Lifestyle, product and café photography plus social reels for % Arabica coffee.",
+      "credits": [],
+      "films": [
+        {
+          "title": "Every step",
+          "video": "/assets/media/films/arabica--every-step.mp4",
+          "poster": "/assets/media/films/arabica--every-step.jpg",
+          "aspect": "720:1280",
+          "youtube": ""
+        },
+        {
+          "title": "Behind the counter",
+          "video": "/assets/media/films/arabica--behind-the-counter.mp4",
+          "poster": "/assets/media/films/arabica--behind-the-counter.jpg",
+          "aspect": "720:1280",
+          "youtube": ""
+        },
+        {
+          "title": "Summer",
+          "video": "/assets/media/films/arabica--summer.mp4",
+          "poster": "/assets/media/films/arabica--summer.jpg",
+          "aspect": "1080:1920",
+          "youtube": ""
+        },
+        {
+          "title": "On the go",
+          "video": "/assets/media/films/arabica--on-the-go.mp4",
+          "poster": "/assets/media/films/arabica--on-the-go.jpg",
+          "aspect": "1080:1920",
+          "youtube": ""
+        }
+      ],
+      "stills": [
+        "/assets/media/stills/arabica/01.jpg",
+        "/assets/media/stills/arabica/02.jpg",
+        "/assets/media/stills/arabica/03.jpg",
+        "/assets/media/stills/arabica/04.jpg",
+        "/assets/media/stills/arabica/05.jpg",
+        "/assets/media/stills/arabica/06.jpg",
+        "/assets/media/stills/arabica/07.jpg",
+        "/assets/media/stills/arabica/08.jpg",
+        "/assets/media/stills/arabica/09.jpg",
+        "/assets/media/stills/arabica/10.jpg",
+        "/assets/media/stills/arabica/11.jpg",
+        "/assets/media/stills/arabica/12.jpg"
+      ],
+      "show_in_photography": true
+    },
+    {
+      "slug": "sarabeths",
+      "title": "Sarabeth's",
+      "subtitle": "Restaurant — photography & reels",
+      "client": "Sarabeth's",
+      "agency": "Yaz Media",
+      "role": "Photographer & videographer",
+      "category": "food",
+      "type": "Restaurant · photo & reels",
+      "orientation": "vertical",
+      "featured": true,
+      "order": 11,
+      "cover": "/assets/media/covers/sarabeth.jpg",
+      "cover_focus": "center",
+      "preview": "",
+      "summary": "Menu, lifestyle and product photography plus social reels for the restaurant Sarabeth's.",
+      "credits": [],
+      "films": [
+        {
+          "title": "Breakfast",
+          "video": "/assets/media/films/sarabeths--breakfast.mp4",
+          "poster": "/assets/media/films/sarabeths--breakfast.jpg",
+          "aspect": "1080:1920",
+          "youtube": ""
+        },
+        {
+          "title": "Little guests",
+          "video": "/assets/media/films/sarabeths--little-guests.mp4",
+          "poster": "/assets/media/films/sarabeths--little-guests.jpg",
+          "aspect": "1080:1920",
+          "youtube": ""
+        },
+        {
+          "title": "Plates",
+          "video": "/assets/media/films/sarabeths--plates.mp4",
+          "poster": "/assets/media/films/sarabeths--plates.jpg",
+          "aspect": "1080:1920",
+          "youtube": ""
+        },
+        {
+          "title": "From the kitchen",
+          "video": "/assets/media/films/sarabeths--from-the-kitchen.mp4",
+          "poster": "/assets/media/films/sarabeths--from-the-kitchen.jpg",
+          "aspect": "1080:1920",
+          "youtube": ""
+        },
+        {
+          "title": "Brunch",
+          "video": "/assets/media/films/sarabeths--brunch.mp4",
+          "poster": "/assets/media/films/sarabeths--brunch.jpg",
+          "aspect": "1080:1920",
+          "youtube": ""
+        },
+        {
+          "title": "Eggs Benedict",
+          "video": "/assets/media/films/sarabeths--eggs-benedict.mp4",
+          "poster": "/assets/media/films/sarabeths--eggs-benedict.jpg",
+          "aspect": "1080:1920",
+          "youtube": ""
+        },
+        {
+          "title": "Pancakes",
+          "video": "/assets/media/films/sarabeths--pancakes.mp4",
+          "poster": "/assets/media/films/sarabeths--pancakes.jpg",
+          "aspect": "1080:1920",
+          "youtube": ""
+        }
+      ],
+      "stills": [
+        "/assets/media/stills/sarabeths/01.jpg",
+        "/assets/media/stills/sarabeths/02.jpg",
+        "/assets/media/stills/sarabeths/03.jpg",
+        "/assets/media/stills/sarabeths/04.jpg",
+        "/assets/media/stills/sarabeths/05.jpg",
+        "/assets/media/stills/sarabeths/06.jpg",
+        "/assets/media/stills/sarabeths/07.jpg",
+        "/assets/media/stills/sarabeths/08.jpg",
+        "/assets/media/stills/sarabeths/09.jpg",
+        "/assets/media/stills/sarabeths/10.jpg",
+        "/assets/media/stills/sarabeths/11.jpg",
+        "/assets/media/stills/sarabeths/12.jpg",
+        "/assets/media/stills/sarabeths/13.jpg",
+        "/assets/media/stills/sarabeths/14.jpg"
+      ],
+      "show_in_photography": true
+    },
+    {
+      "slug": "asador-de-aranda",
+      "title": "Asador de Aranda",
+      "subtitle": "Restaurant reels",
+      "client": "Asador de Aranda",
+      "agency": "Yaz Media",
+      "role": "Videographer & editor",
+      "category": "food",
+      "type": "Restaurant · reels",
+      "orientation": "vertical",
+      "featured": true,
+      "order": 12,
+      "cover": "/assets/media/covers/asador.jpg",
+      "cover_focus": "center",
+      "preview": "",
+      "summary": "Social reels for the Spanish restaurant Asador de Aranda.",
+      "credits": [],
+      "films": [
+        {
+          "title": "Reel 1",
+          "video": "/assets/media/films/asador-de-aranda--reel-1.mp4",
+          "poster": "/assets/media/films/asador-de-aranda--reel-1.jpg",
+          "aspect": "1080:1920",
+          "youtube": ""
+        },
+        {
+          "title": "Reel 2",
+          "video": "/assets/media/films/asador-de-aranda--reel-2.mp4",
+          "poster": "/assets/media/films/asador-de-aranda--reel-2.jpg",
+          "aspect": "1080:1920",
+          "youtube": ""
+        },
+        {
+          "title": "Reel 3",
+          "video": "/assets/media/films/asador-de-aranda--reel-3.mp4",
+          "poster": "/assets/media/films/asador-de-aranda--reel-3.jpg",
+          "aspect": "1080:1920",
+          "youtube": ""
+        },
+        {
+          "title": "Reel 4",
+          "video": "/assets/media/films/asador-de-aranda--reel.mp4",
+          "poster": "/assets/media/films/asador-de-aranda--reel.jpg",
+          "aspect": "1080:1920",
+          "youtube": ""
+        }
+      ],
+      "stills": [
+        "/assets/media/stills/asador-de-aranda/01.jpg",
+        "/assets/media/stills/asador-de-aranda/03.jpg",
+        "/assets/media/stills/asador-de-aranda/04.jpg"
+      ],
+      "show_in_photography": false
+    },
+    {
+      "slug": "dubai-investments-30-years",
+      "title": "Dubai Investments",
+      "subtitle": "30 years",
+      "client": "Dubai Investments",
+      "agency": "Yaz Media",
+      "role": "Director of Photography",
+      "category": "films",
+      "type": "Film",
+      "orientation": "vertical",
+      "featured": false,
+      "order": 13,
+      "cover": "/assets/media/covers/v_di30.jpg",
+      "cover_focus": "50% 20%",
+      "preview": "",
+      "summary": "A 30th-anniversary film blending live action and CGI: a grandfather and his grandson walk through the desert as the city rises from the sand behind them.",
+      "credits": [
+        "CGI: Sifeddine Boumelit"
+      ],
+      "films": [
+        {
+          "title": "30 years",
+          "video": "/assets/media/films/dubai-investments-30-years--30-years.mp4",
+          "poster": "/assets/media/films/dubai-investments-30-years--30-years.jpg",
+          "aspect": "1080:1920",
+          "youtube": ""
+        }
+      ],
+      "stills": [
+        "/assets/media/stills/dubai-investments-30-years/02.jpg",
+        "/assets/media/stills/dubai-investments-30-years/03.jpg",
+        "/assets/media/stills/dubai-investments-30-years/04.jpg"
+      ],
+      "show_in_photography": false
+    },
+    {
+      "slug": "mandelli",
+      "title": "Mandelli",
+      "subtitle": "Fashion film & photography",
+      "client": "Mandelli",
+      "agency": "Yaz Media",
+      "role": "Videographer, editor & photographer",
+      "category": "films",
+      "type": "Fashion",
+      "orientation": "vertical",
+      "featured": false,
+      "order": 14,
+      "cover": "/assets/media/covers/mandelli.jpg",
+      "cover_focus": "50% 25%",
+      "preview": "",
+      "summary": "A fashion ad, social reels and product photography for Mandelli.",
+      "credits": [],
+      "films": [
+        {
+          "title": "Main ad",
+          "video": "/assets/media/films/mandelli--main-ad.mp4",
+          "poster": "/assets/media/films/mandelli--main-ad.jpg",
+          "aspect": "1080:1920",
+          "youtube": ""
+        }
+      ],
+      "stills": [
+        "/assets/media/stills/mandelli/01.jpg",
+        "/assets/media/stills/mandelli/02.jpg",
+        "/assets/media/stills/mandelli/03.jpg",
+        "/assets/media/stills/mandelli/04.jpg",
+        "/assets/media/stills/mandelli/05.jpg",
+        "/assets/media/stills/mandelli/07.jpg",
+        "/assets/media/stills/mandelli/08.jpg"
+      ],
+      "show_in_photography": true
+    },
+    {
+      "slug": "icons-of-the-porsche",
+      "title": "Icons of the Porsche",
+      "subtitle": "Event film",
+      "client": "Event film",
+      "agency": "V-Patch",
+      "role": "Camera & edit",
+      "category": "events",
+      "type": "Event film",
+      "orientation": "vertical",
+      "featured": false,
+      "order": 15,
+      "cover": "/assets/media/covers/v_porsche.jpg",
+      "cover_focus": "50% 40%",
+      "preview": "",
+      "summary": "A highlights film from the Icons of the Porsche event, shot and edited while I was at V-Patch.",
+      "credits": [],
+      "films": [
+        {
+          "title": "Highlights",
+          "video": "/assets/media/films/icons-of-the-porsche--highlights.mp4",
+          "poster": "/assets/media/films/icons-of-the-porsche--highlights.jpg",
+          "aspect": "1080:1920",
+          "youtube": ""
+        }
+      ],
+      "stills": [
+        "/assets/media/stills/icons-of-the-porsche/01.jpg",
+        "/assets/media/stills/icons-of-the-porsche/02.jpg",
+        "/assets/media/stills/icons-of-the-porsche/03.jpg"
+      ],
+      "show_in_photography": false
+    },
+    {
+      "slug": "the-car-lab",
+      "title": "The Car Lab",
+      "subtitle": "Brand film",
+      "client": "The Car Lab",
+      "agency": "The ArtKash",
+      "role": "Video production",
+      "category": "films",
+      "type": "Automotive",
+      "orientation": "vertical",
+      "featured": false,
+      "order": 16,
+      "cover": "/assets/media/covers/v_carlab.jpg",
+      "cover_focus": "50% 40%",
+      "preview": "",
+      "summary": "A brand film and short-form cuts for The Car Lab.",
+      "credits": [],
+      "films": [
+        {
+          "title": "The Car Lab",
+          "video": "/assets/media/films/the-car-lab--brand-film.mp4",
+          "poster": "/assets/media/films/the-car-lab--brand-film.jpg",
+          "aspect": "1080:1920",
+          "youtube": ""
+        }
+      ],
+      "stills": [
+        "/assets/media/stills/the-car-lab/02.jpg",
+        "/assets/media/stills/the-car-lab/03.jpg",
+        "/assets/media/stills/the-car-lab/05.jpg"
+      ],
+      "show_in_photography": false
+    },
+    {
+      "slug": "sama-shoufani",
+      "title": "Sama Shoufani",
+      "subtitle": "Interviews & behind the scenes",
+      "client": "Sama Shoufani",
+      "agency": "Yaz Media",
+      "role": "Videographer & editor",
+      "category": "films",
+      "type": "Interviews",
+      "orientation": "vertical",
+      "featured": false,
+      "order": 17,
+      "cover": "/assets/media/covers/sama.jpg",
+      "cover_focus": "center",
+      "preview": "",
+      "summary": "Interview films and a behind-the-scenes reel with Sama Shoufani.",
+      "credits": [],
+      "films": [
+        {
+          "title": "Interview",
+          "video": "/assets/media/films/sama-shoufani--interview.mp4",
+          "poster": "/assets/media/films/sama-shoufani--interview.jpg",
+          "aspect": "1080:1920",
+          "youtube": ""
+        }
+      ],
+      "stills": [
+        "/assets/media/stills/sama-shoufani/01.jpg",
+        "/assets/media/stills/sama-shoufani/03.jpg"
+      ],
+      "show_in_photography": false
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+# Pages CMS admin (https://app.pagescms.org). Edits content/*.json and uploads to assets/media.
+media:
+  input: assets/media
+  output: /assets/media
+
+content:
+  - name: projects
+    label: Projects
+    type: file
+    path: content/projects.json
+    format: json
+    fields:
+      - name: projects
+        label: Projects
+        description: Drag to reorder. "Featured" projects appear in the home carousel, sorted by Order.
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string, required: true }
+          - { name: subtitle, label: Subtitle, type: string, description: "e.g. National Day film" }
+          - { name: slug, label: Page address, type: string, required: true, description: "Lowercase with dashes, used in the link: /work/?p=your-slug. Set once, don't change." }
+          - { name: featured, label: Featured in home carousel, type: boolean, default: false }
+          - { name: order, label: Order, type: number, description: "1 = first. Controls carousel and grid order." }
+          - { name: orientation, label: Video orientation, type: select, options: { values: [horizontal, vertical] }, default: horizontal, description: "Vertical = 9:16 card and player. Horizontal = 16:9." }
+          - { name: category, label: Category, type: select, options: { values: [films, events, interiors, food] }, description: "Used by the filters on More work / All work." }
+          - { name: type, label: Type label, type: string, description: "Short label shown above the title, e.g. Commercial · 5 films" }
+          - { name: client, label: Client, type: string }
+          - { name: agency, label: Agency / company, type: string }
+          - { name: role, label: My role, type: string }
+          - { name: summary, label: Overview, type: text }
+          - { name: credits, label: Other credits, type: string, list: true, description: "One line each, e.g. CGI: Name" }
+          - { name: cover, label: Cover image, type: image, description: "1920×1080 JPG (vertical projects: 1080×1920). Keep the subject in the centre safe zone." }
+          - { name: cover_focus, label: Cover focus point, type: string, default: center, description: "Where to crop from: center, top, left, or e.g. 30% 40%" }
+          - { name: preview, label: Fallback clip (optional), type: file, description: "Only used if the project has no films." }
+          - name: films
+            label: Films
+            description: The first film plays in the home carousel. With 2+ films, small windows let visitors switch between them.
+            type: object
+            list: true
+            fields:
+              - { name: title, label: Film title, type: string }
+              - { name: video, label: Video file (MP4), type: file, description: "Export H.264 MP4, 1080p, under ~50 MB (about 3 Mbps). Plays on the site with sound and fullscreen." }
+              - { name: poster, label: Poster / thumbnail, type: image, description: "A still from the film, same shape as the video." }
+              - { name: aspect, label: Exact size (optional), type: string, description: "Width:height, e.g. 1920:1080 or 1080:1920. Leave empty and the site reads it from the video." }
+              - { name: youtube, label: YouTube link (optional), type: string, description: "Only for long films you don't want to upload here." }
+              - { name: orientation, label: Orientation (only if different from project), type: select, options: { values: ["", horizontal, vertical] } }
+          - { name: stills, label: Stills / photos, type: image, list: true }
+          - { name: show_in_photography, label: Show stills on Photography page, type: boolean, default: false }
+
+  - name: profile
+    label: About me & contact
+    type: file
+    path: content/profile.json
+    format: json
+    fields:
+      - { name: name_first, label: First name, type: string }
+      - { name: name_last, label: Last name, type: string }
+      - { name: title, label: Main title, type: string }
+      - { name: subline, label: Line under title, type: string }
+      - { name: location, label: Location, type: string }
+      - { name: status, label: Status, type: string, description: "e.g. Available for projects" }
+      - { name: intro, label: Intro (home page), type: text }
+      - { name: portrait, label: Portrait (home page), type: image }
+      - { name: worked_with, label: Worked with (client names), type: string, list: true }
+      - name: about
+        label: About page
+        type: object
+        fields:
+          - { name: headline, label: Headline, type: string }
+          - { name: headline_accent, label: Headline accent (italic), type: string }
+          - { name: photo, label: Second photo, type: image }
+          - { name: photo_alt, label: Second photo description, type: string }
+          - { name: bio, label: Bio paragraphs, type: text, list: true }
+          - name: skills
+            label: Skills
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Skill, type: string }
+              - { name: detail, label: Detail, type: string }
+          - { name: tools, label: Software, type: string, list: true }
+          - { name: languages, label: Languages, type: string }
+          - { name: education, label: Education, type: string }
+      - name: experience
+        label: Experience
+        type: object
+        list: true
+        fields:
+          - { name: dates, label: Dates, type: string }
+          - { name: title, label: Job title, type: string }
+          - { name: company, label: Company, type: string }
+          - { name: place, label: City, type: string }
+          - { name: summary, label: One-line summary, type: text }
+          - { name: link, label: Link (optional), type: string }
+      - name: contact
+        label: Contact
+        type: object
+        fields:
+          - { name: headline, label: Headline, type: string }
+          - { name: headline_accent, label: Headline accent (italic), type: string }
+          - { name: email, label: Email, type: string }
+          - { name: whatsapp, label: WhatsApp number, type: string }
+          - { name: linkedin, label: LinkedIn URL, type: string }
+          - { name: instagram, label: Instagram URL, type: string }
+      - { name: cv_file, label: CV PDF, type: file }
