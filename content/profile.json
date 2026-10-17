@@ -2,12 +2,21 @@
   "name_first": "Kashan",
   "name_last": "Amjad",
   "title": "Senior Videographer & Photographer",
-  "subline": "Video production · Cinematography · Post-production",
+  "subline": "Video production · Cinematography · Post-production · AI workflows",
   "location": "Dubai, UAE",
   "status": "Available for projects",
-  "intro": "I'm a Dubai-based videographer and photographer with 8+ years across commercials, corporate films, events, interiors and food. I shoot, light, edit and grade — from brief to final delivery.",
+  "intro": "I'm a Dubai-based videographer and photographer with 8+ years across commercials, corporate films, events, interiors and food. I shoot, light, edit and grade — from brief to final delivery — and I build AI tools into my workflow to deliver faster, while the creative decisions stay mine.",
   "portrait": "/assets/media/people/portrait.jpg",
-  "worked_with": ["LG", "Capital.com", "Dubai Investments", "MOFA", "Etihad Credit Insurance", "Arabica", "Sarabeth's", "Invest Bank"],
+  "worked_with": [
+    "LG",
+    "Capital.com",
+    "Dubai Investments",
+    "MOFA",
+    "Etihad Credit Insurance",
+    "Arabica",
+    "Sarabeth's",
+    "Invest Bank"
+  ],
   "about": {
     "headline": "I shoot, light, edit and grade —",
     "headline_accent": "from brief to final delivery.",
@@ -16,26 +25,96 @@
     "bio": [
       "I'm Kashan Amjad, a Dubai-based videographer and photographer with 8+ years in commercial, corporate and event production.",
       "I've made films and photographs for brands like LG, Capital.com and Arabica, and for UAE government entities including MOFA and Etihad Credit Insurance. My strength is the whole chain: planning the approach, shooting, lighting, editing, colour grading and delivering the finished piece.",
+      "More and more of my work is AI-integrated. I use tools like Kling, Veo and Nano Banana to generate shots, build versions and speed up the edit — on the Dubai Investments National Day film, AI-generated footage made up around half of the cut. AI makes the process faster; the story, the framing and the final call are still made by hand.",
       "Where I'm heading: cinematic and documentary filmmaking. My first film, Shabab (2019), was a short documentary for the DW × Dawn.com #ItOnlyHappensInPakistan contest."
     ],
     "skills": [
-      { "name": "Cinematography & camera", "detail": "Camera operation, interview and location lighting, gimbal and camera support" },
-      { "name": "Photography", "detail": "Commercial, event, product, food and interior photography" },
-      { "name": "Editing & colour", "detail": "Narrative and social editing, colour correction and grading, audio cleanup" },
-      { "name": "Motion, VFX & AI", "detail": "Supporting skills: motion graphics, VFX and AI-assisted visuals" }
+      {
+        "name": "Cinematography & camera",
+        "detail": "Camera operation, interview and location lighting, gimbal and camera support"
+      },
+      {
+        "name": "Photography",
+        "detail": "Commercial, event, product, food and interior photography"
+      },
+      {
+        "name": "Editing & colour",
+        "detail": "Narrative and social editing, colour correction and grading, audio cleanup"
+      },
+      {
+        "name": "AI-assisted production",
+        "detail": "Kling, Veo and Nano Banana for generated footage and images, faster edits and versions, alongside motion graphics and VFX"
+      }
     ],
-    "tools": ["Premiere Pro", "After Effects", "DaVinci Resolve", "Lightroom", "Photoshop", "Kling", "Veo"],
+    "tools": [
+      "Premiere Pro",
+      "After Effects",
+      "DaVinci Resolve",
+      "Final Cut Pro",
+      "Photoshop",
+      "Illustrator",
+      "InDesign",
+      "Lightroom"
+    ],
+    "ai_tools": [
+      "Kling",
+      "Veo 3",
+      "Nano Banana"
+    ],
     "languages": "English, Urdu, Pashto · Hindi (spoken) · Arabic (basic)",
     "education": "BA Mass Communication, Film & Drama Production · NUML Islamabad (2017–2021)"
   },
   "experience": [
-    { "dates": "Aug 2026 — Now", "title": "Videographer & Video Editor", "company": "Hashtag Social Media Agency", "place": "Dubai", "summary": "End-to-end video production for a government account, plus shooting and editing across other agency accounts." },
-    { "dates": "2024 — 2026", "title": "Senior Creative Content Producer", "company": "Yaz Media", "place": "Dubai", "summary": "Shot, edited and led production for LG, Capital.com, Dubai Investments, Arabica, Sarabeth's, MOFA, Etihad Credit Insurance and more." },
-    { "dates": "2022 — Now", "title": "Co-Founder · Creative Production Lead", "company": "The ArtKash", "place": "Dubai", "summary": "Commercial production and photography for clients like The Fitout and The Car Lab.", "link": "https://theartkash.com" },
-    { "dates": "2023 — 2024", "title": "Creative Producer", "company": "V-Patch", "place": "Dubai", "summary": "Commercials, event films and photography, including the Cars Now launch ad." },
-    { "dates": "2022 — 2023", "title": "Video Producer / Graphic Designer", "company": "Soken", "place": "Dubai", "summary": "Official app promo video and supporting motion and design work." },
-    { "dates": "2021 — 2022", "title": "Creative Lead", "company": "CxO Global Forum", "place": "Islamabad", "summary": "Coverage of the CxO Global Digital Summit, the CxO Rendezvous show and weekly news content." },
-    { "dates": "2018 — 2021", "title": "Senior Videographer & Graphic Designer", "company": "Kahani Studios", "place": "Islamabad", "summary": "Brand shoots, product photography and commercial design." }
+    {
+      "dates": "Aug 2026 — Now",
+      "title": "Videographer & Video Editor",
+      "company": "Hashtag Social Media Agency",
+      "place": "Dubai",
+      "summary": "End-to-end video production for a government account, plus shooting and editing across other agency accounts."
+    },
+    {
+      "dates": "2024 — 2026",
+      "title": "Senior Creative Content Producer",
+      "company": "Yaz Media",
+      "place": "Dubai",
+      "summary": "Shot, edited and led production for LG, Capital.com, Dubai Investments, Arabica, Sarabeth's, MOFA, Etihad Credit Insurance and more."
+    },
+    {
+      "dates": "2022 — Now",
+      "title": "Co-Founder · Creative Production Lead",
+      "company": "The ArtKash",
+      "place": "Dubai",
+      "summary": "Commercial production and photography for clients like The Fitout and The Car Lab.",
+      "link": "https://theartkash.com"
+    },
+    {
+      "dates": "2023 — 2024",
+      "title": "Creative Producer",
+      "company": "V-Patch",
+      "place": "Dubai",
+      "summary": "Commercials, event films and photography, including the Cars Now launch ad."
+    },
+    {
+      "dates": "2022 — 2023",
+      "title": "Video Producer / Graphic Designer",
+      "company": "Soken",
+      "place": "Dubai",
+      "summary": "Official app promo video and supporting motion and design work."
+    },
+    {
+      "dates": "2021 — 2022",
+      "title": "Creative Lead",
+      "company": "CxO Global Forum",
+      "place": "Islamabad",
+      "summary": "Coverage of the CxO Global Digital Summit, the CxO Rendezvous show and weekly news content."
+    },
+    {
+      "dates": "2018 — 2021",
+      "title": "Senior Videographer & Graphic Designer",
+      "company": "Kahani Studios",
+      "place": "Islamabad",
+      "summary": "Brand shoots, product photography and commercial design."
+    }
   ],
   "contact": {
     "headline": "Have a shoot",

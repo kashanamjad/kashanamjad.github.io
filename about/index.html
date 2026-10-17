@@ -33,7 +33,7 @@
         <h1 id="ab-h"></h1>
         <div class="bio" id="ab-bio"></div>
         <div class="skills" id="ab-skills"></div>
-        <div class="facts-row"><div><span class="mono">Tools</span><span id="ab-tools"></span></div><div><span class="mono">Languages</span><span id="ab-lang"></span></div><div><span class="mono">Education</span><span id="ab-edu"></span></div></div>
+        <div class="facts-row"><div><span class="mono">Software</span><span id="ab-tools"></span></div><div><span class="mono amber">AI tools</span><span id="ab-ai"></span></div><div><span class="mono">Languages</span><span id="ab-lang"></span></div><div><span class="mono">Education</span><span id="ab-edu"></span></div></div>
         <div class="p-ctas"><a class="pill solid" data-cv href="/cv/" target="_blank" rel="noopener">Download CV <i>↓</i></a><a class="pill ghost" href="/#contact">Contact <i>→</i></a></div>
       </div>
     </section>
@@ -55,6 +55,7 @@
     $("#ab-bio").innerHTML = (a.bio || []).map((t) => `<p>${esc(t)}</p>`).join("");
     $("#ab-skills").innerHTML = (a.skills || []).map((s, i) => `<div><span class="mono amber">0${i + 1}</span><b>${esc(s.name)}</b><p>${esc(s.detail)}</p></div>`).join("");
     $("#ab-tools").textContent = (a.tools || []).join(" · ");
+    $("#ab-ai").textContent = (a.ai_tools || []).join(" · ");
     $("#ab-lang").textContent = a.languages || "";
     $("#ab-edu").textContent = a.education || "";
     $("#xp").innerHTML = (me.experience || []).map((x) => `<li><span class="mono muted">${esc(x.dates)}</span><div><b>${esc(x.title)}</b><p>${esc(x.summary || "")}</p></div><span class="co">${x.link ? `<a href="${esc(x.link)}" target="_blank" rel="noopener">${esc(x.company)} ↗</a>` : esc(x.company)} · ${esc(x.place || "")}</span></li>`).join("");

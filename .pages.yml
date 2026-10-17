@@ -79,6 +79,7 @@ content:
               - { name: name, label: Skill, type: string }
               - { name: detail, label: Detail, type: string }
           - { name: tools, label: Software, type: string, list: true }
+          - { name: ai_tools, label: AI tools, type: string, list: true }
           - { name: languages, label: Languages, type: string }
           - { name: education, label: Education, type: string }
       - name: experience
