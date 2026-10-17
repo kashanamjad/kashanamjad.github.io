@@ -54,7 +54,7 @@
   <script>
   (async () => {
     const esc = (s = "") => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
-    const [me, pr] = await Promise.all([fetch("/content/profile.json").then((r) => r.json()), fetch("/content/projects.json").then((r) => r.json())]);
+    const [me, pr] = await Promise.all([fetch("/content/profile.json", { cache: "no-cache" }).then((r) => r.json()), fetch("/content/projects.json", { cache: "no-cache" }).then((r) => r.json())]);
     const work = (pr.projects || []).filter((p) => p.featured).sort((a, b) => a.order - b.order).slice(0, 8);
     const c = me.contact, a = me.about;
     document.getElementById("cv").innerHTML = `

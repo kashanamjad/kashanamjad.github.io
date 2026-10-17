@@ -10,8 +10,8 @@ const KA = (() => {
   async function load() {
     if (cache) return cache;
     const [p, pr] = await Promise.all([
-      fetch("/content/profile.json").then((r) => r.json()),
-      fetch("/content/projects.json").then((r) => r.json()),
+      fetch("/content/profile.json", { cache: "no-cache" }).then((r) => r.json()),
+      fetch("/content/projects.json", { cache: "no-cache" }).then((r) => r.json()),
     ]);
     const projects = (pr.projects || []).slice().sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
     cache = { profile: p, projects };
