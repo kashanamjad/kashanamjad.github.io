@@ -320,7 +320,5 @@ button.hero-media{display:block;width:100%;text-align:left}
 
 @media (max-width:860px){ .about .pics .small{right:-8px;bottom:-24px;width:38%} .about .pics{margin-bottom:24px} }
 
-/* About portrait: fade the white studio background into the dark page (spotlight look) */
-.about .pics .main{border-radius:0;background-color:transparent;filter:brightness(.78) contrast(1.18) sepia(.2);
-  -webkit-mask-image:radial-gradient(ellipse 56% 56% at 50% 47%,#000 36%,rgba(0,0,0,.6) 58%,rgba(0,0,0,.18) 76%,transparent 90%);
-          mask-image:radial-gradient(ellipse 56% 56% at 50% 47%,#000 36%,rgba(0,0,0,.6) 58%,rgba(0,0,0,.18) 76%,transparent 90%)}
+/* About portrait: dark studio version (background replaced) */
+.about .pics .main{background-position:50% 30%}
