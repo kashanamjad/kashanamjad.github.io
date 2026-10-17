@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Work — Kashan Amjad</title>
+  <meta name="description" content="Films, commercials, events, interiors and food work by Kashan Amjad, videographer and photographer in Dubai." />
+  <meta name="theme-color" content="#171615" />
+  <link rel="icon" href="/webicon.PNG" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/site.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header always">
+    <div class="left"><a class="brand" href="/">Kashan Amjad</a><a class="back" href="/" data-back>← <span>Back</span></a></div>
+    <nav class="site-nav" aria-label="Main">
+      <a href="/#work">Work</a><a href="/#more">All work</a><a href="/about/">About</a><a href="/photography/">Photography</a><a href="/#contact">Contact</a>
+      <a class="pill ghost sm" data-cv href="/cv/">Download CV <i>↓</i></a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    </nav>
+  </header>
+  <div class="mobile-menu"><a href="/#work">Work</a><a href="/#more">All work</a><a href="/about/">About</a><a href="/photography/">Photography</a><a href="/#contact">Contact</a><a class="pill solid" data-cv href="/cv/">Download CV <i>↓</i></a></div>
+
+  <main class="page" id="main"></main>
+
+  <footer class="site-footer mono"><span>© <span data-year></span> Kashan Amjad</span><a href="/">Home</a><a href="/#contact">Contact</a></footer>
+  <script src="/assets/js/common.js"></script>
+  <script>
+  (async () => {
+    const { filmsOf, ratio, isV, $, $$, esc, load, playable, ytId, projectUrl, focus, header, reveal, open, playFilms, fillProfile } = KA;
+    header();
+    const { profile, projects } = await load();
+    const main = $("#main");
+    const slug = new URLSearchParams(location.search).get("p");
+    const p = projects.find((x) => x.slug === slug);
+
+    if (!p) {
+      // All work
+      document.title = "All work — Kashan Amjad";
+      main.innerHTML = `<div class="page-ambient" style="background-image:url(${esc(projects[0]?.cover || "")})"></div>
+        <section class="more" style="padding-top:30px">
+          <div class="sec-head"><h1 class="h-xl">All <span class="serif">work</span></h1>
+            <div class="filters" id="filters" role="group" aria-label="Filter work">
+              <button aria-pressed="true" data-f="all">All</button><button aria-pressed="false" data-f="films">Films &amp; Commercials</button>
+              <button aria-pressed="false" data-f="events">Events &amp; Corporate</button><button aria-pressed="false" data-f="interiors">Interiors</button>
+              <button aria-pressed="false" data-f="food">Food &amp; Hospitality</button></div></div>
+          <div class="grid" id="grid">${projects.map((x, i) => `<a class="win ${i === 0 ? "big" : i % 7 === 5 ? "wide" : ""}" data-cat="${esc(x.category)}" href="${projectUrl(x)}" style="background-image:url(${esc(x.cover)});--pos:${esc(focus(x))}"><div class="cap glass"><b>${esc(x.title)}</b><span>${esc(x.agency)} · ${esc(x.role)}</span></div></a>`).join("")}</div>
+        </section>`;
+      $$("#filters button").forEach((b) => b.addEventListener("click", () => {
+        $$("#filters button").forEach((x) => x.setAttribute("aria-pressed", x === b));
+        $$(".win").forEach((w) => (w.hidden = b.dataset.f !== "all" && w.dataset.cat !== b.dataset.f));
+      }));
+      fillProfile(profile);
+      return;
+    }
+
+    // Single project
+    document.title = `${p.title}${p.subtitle ? " — " + p.subtitle : ""} · Kashan Amjad`;
+    const i = projects.indexOf(p), nx = projects[(i + 1) % projects.length];
+    const films = filmsOf(p);
+    const facts = [["Client", p.client], ["Agency", p.agency], ["My role", p.role], ...(p.credits || []).filter(Boolean).map((c) => ["Credits", c])]
+      .filter(([, v]) => v).map(([k, v]) => `<div><dt class="mono">${k}</dt><dd${k === "My role" ? ' class="amber"' : ""}>${esc(v)}</dd></div>`).join("");
+    // Player sized to the film's exact shape, with native sound + fullscreen controls.
+    const hero = films.length
+      ? `<div class="player" id="player"><video id="pv" controls playsinline preload="metadata"></video><button class="pill solid hero-cta" id="yt" hidden>Watch on YouTube <i>▶</i></button></div><div class="mono muted" id="ptitle" style="margin-top:10px"></div>`
+      : `<div class="hero-media" style="background-image:url(${esc(p.cover)});--pos:${esc(focus(p))}"></div>`;
+    const filmTiles = films.length > 1
+      ? `<div class="label-row mono"><span>Films</span><span>${films.length}</span></div><div class="films">${films.map((f, k) =>
+          `<button class="film" data-k="${k}" style="background-image:url(${esc(f.poster || (ytId(f.youtube) ? `https://i.ytimg.com/vi/${ytId(f.youtube)}/hqdefault.jpg` : p.cover))})"><span>${esc(f.title)}</span><b class="play">▶</b></button>`).join("")}</div>` : "";
+    const stills = (p.stills || []).length
+      ? `<div class="label-row mono"><span>${p.category === "food" || !films.length ? "Gallery" : "Stills"}</span><span>${p.stills.length}</span></div>
+         <div class="stills">${p.stills.map((s, k) => `<button data-s="${k}" aria-label="Open image ${k + 1}"><img src="${esc(s)}" alt="${esc(p.title)} — image ${k + 1}" loading="lazy" /></button>`).join("")}</div>` : "";
+
+    main.innerHTML = `
+      <div class="page-ambient" style="background-image:url(${esc(p.cover)})"></div>
+      <article class="project">
+        <div class="p-info">
+          <div class="mono amber">${String(i + 1).padStart(2, "0")} / ${projects.length} · ${esc(p.type || "")}</div>
+          <h1 class="p-title">${esc(p.title)}</h1>
+          ${p.subtitle ? `<div class="serif p-sub">${esc(p.subtitle)}</div>` : ""}
+          ${p.summary ? `<p class="p-summary">${esc(p.summary)}</p>` : ""}
+          <dl class="facts">${facts}</dl>
+          <div class="p-ctas"><a class="pill ghost" href="/" data-back>← Back</a><a class="pill ghost" href="/#more">All work <i>☰</i></a></div>
+        </div>
+        <div class="p-media">${hero}${filmTiles}${stills}</div>
+      </article>
+      <a class="next" href="${projectUrl(nx)}"><div class="bgi" style="background-image:url(${esc(nx.cover)})"></div><span class="mono muted">Next project</span><b>${esc(nx.title)} <span class="amber">→</span></b></a>`;
+
+    const pv = $("#pv"), box = $("#player");
+    function show(k, autoplay) {
+      const f = films[k];
+      if (!f || !box) return;
+      box.style.aspectRatio = String(ratio(f, p));
+      box.classList.toggle("v", ratio(f, p) < 1);
+      $("#ptitle").textContent = films.length > 1 ? `${k + 1} / ${films.length} · ${f.title}` : f.title;
+      $$(".film[data-k]").forEach((b) => b.classList.toggle("on", +b.dataset.k === k));
+      if (f.video) {
+        pv.hidden = false; $("#yt").hidden = true;
+        pv.poster = f.poster || p.cover; pv.src = f.video;
+        if (autoplay) pv.play().catch(() => {});
+      } else {
+        pv.hidden = true; $("#yt").hidden = false;
+        box.style.background = `url(${f.poster || p.cover}) center/cover`;
+        $("#yt").onclick = () => open([{ youtube: ytId(f.youtube), title: f.title, vertical: ratio(f, p) < 1 }]);
+      }
+    }
+    if (pv) { pv.addEventListener("loadedmetadata", () => { if (pv.videoWidth) { box.style.aspectRatio = `${pv.videoWidth} / ${pv.videoHeight}`; box.classList.toggle("v", pv.videoWidth < pv.videoHeight); } }); show(0, false); }
+    $$(".film[data-k]").forEach((b) => (b.onclick = () => { show(+b.dataset.k, true); box.scrollIntoView({ behavior: "smooth", block: "center" }); }));
+    const gal = (p.stills || []).map((s) => ({ src: s, title: p.title }));
+    $$("[data-s]").forEach((b) => (b.onclick = () => open(gal, +b.dataset.s)));
+    fillProfile(profile);
+    reveal();
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Kashan Amjad</title>
+  <meta name="description" content="About Kashan Amjad: Dubai-based senior videographer and photographer with 8+ years across commercials, corporate films, events, interiors and food." />
+  <meta name="theme-color" content="#171615" />
+  <link rel="icon" href="/webicon.PNG" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/site.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header always">
+    <div class="left"><a class="brand" href="/">Kashan Amjad</a><a class="back" href="/" data-back>← <span>Back</span></a></div>
+    <nav class="site-nav" aria-label="Main">
+      <a href="/#work">Work</a><a href="/#more">All work</a><a href="/about/" aria-current="page">About</a><a href="/photography/">Photography</a><a href="/#contact">Contact</a>
+      <a class="pill ghost sm" data-cv href="/cv/">Download CV <i>↓</i></a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    </nav>
+  </header>
+  <div class="mobile-menu"><a href="/#work">Work</a><a href="/#more">All work</a><a href="/about/">About</a><a href="/photography/">Photography</a><a href="/#contact">Contact</a><a class="pill solid" data-cv href="/cv/">Download CV <i>↓</i></a></div>
+
+    <main class="page" id="main">
+    <div class="page-ambient" style="background-image:url(/assets/media/people/at-work.jpg)"></div>
+    <section class="about">
+      <div class="pics reveal"><div class="main" id="pic-main" role="img" aria-label="Portrait of Kashan Amjad"></div><div class="small" id="pic-small" role="img"></div></div>
+      <div>
+        <div class="mono amber">About</div>
+        <h1 id="ab-h"></h1>
+        <div class="bio" id="ab-bio"></div>
+        <div class="skills" id="ab-skills"></div>
+        <div class="facts-row"><div><span class="mono">Tools</span><span id="ab-tools"></span></div><div><span class="mono">Languages</span><span id="ab-lang"></span></div><div><span class="mono">Education</span><span id="ab-edu"></span></div></div>
+        <div class="p-ctas"><a class="pill solid" data-cv href="/cv/">Download CV <i>↓</i></a><a class="pill ghost" href="/#contact">Contact <i>→</i></a></div>
+      </div>
+    </section>
+    <section class="xp"><div class="mono amber">Experience</div><ol id="xp"></ol></section>
+  </main>
+
+  <footer class="site-footer mono"><span>© <span data-year></span> Kashan Amjad</span><a href="/">Home</a><a href="/#contact">Contact</a></footer>
+  <script src="/assets/js/common.js"></script>
+  <script>
+  (async () => {
+    const { $, esc, load, header, reveal, fillProfile } = KA;
+    header();
+    const { profile: me } = await load();
+    const a = me.about;
+    $("#pic-main").style.backgroundImage = `url(${me.portrait})`;
+    $("#pic-small").style.backgroundImage = `url(${a.photo})`;
+    $("#pic-small").setAttribute("aria-label", a.photo_alt || "");
+    $("#ab-h").innerHTML = `${esc(a.headline)} <span class="serif">${esc(a.headline_accent)}</span>`;
+    $("#ab-bio").innerHTML = (a.bio || []).map((t) => `<p>${esc(t)}</p>`).join("");
+    $("#ab-skills").innerHTML = (a.skills || []).map((s, i) => `<div><span class="mono amber">0${i + 1}</span><b>${esc(s.name)}</b><p>${esc(s.detail)}</p></div>`).join("");
+    $("#ab-tools").textContent = (a.tools || []).join(" · ");
+    $("#ab-lang").textContent = a.languages || "";
+    $("#ab-edu").textContent = a.education || "";
+    $("#xp").innerHTML = (me.experience || []).map((x) => `<li><span class="mono muted">${esc(x.dates)}</span><div><b>${esc(x.title)}</b><p>${esc(x.summary || "")}</p></div><span class="co">${x.link ? `<a href="${esc(x.link)}" target="_blank" rel="noopener">${esc(x.company)} ↗</a>` : esc(x.company)} · ${esc(x.place || "")}</span></li>`).join("");
+    fillProfile(me);
+    reveal();
+  })();
+  </script>
+</body>
+</html>

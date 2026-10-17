@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photography — Kashan Amjad</title>
+  <meta name="description" content="Food, product, interior, fashion and event photography by Kashan Amjad in Dubai." />
+  <meta name="theme-color" content="#171615" />
+  <link rel="icon" href="/webicon.PNG" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/site.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header always">
+    <div class="left"><a class="brand" href="/">Kashan Amjad</a><a class="back" href="/" data-back>← <span>Back</span></a></div>
+    <nav class="site-nav" aria-label="Main">
+      <a href="/#work">Work</a><a href="/#more">All work</a><a href="/about/">About</a><a href="/photography/" aria-current="page">Photography</a><a href="/#contact">Contact</a>
+      <a class="pill ghost sm" data-cv href="/cv/">Download CV <i>↓</i></a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    </nav>
+  </header>
+  <div class="mobile-menu"><a href="/#work">Work</a><a href="/#more">All work</a><a href="/about/">About</a><a href="/photography/">Photography</a><a href="/#contact">Contact</a><a class="pill solid" data-cv href="/cv/">Download CV <i>↓</i></a></div>
+
+    <main class="page" id="main">
+    <div class="page-ambient" style="background-image:url(/assets/media/covers/sarabeth.jpg)"></div>
+    <section class="photo-head"><div class="sec-head"><h1 class="h-xl">Photo<span class="serif">graphy</span></h1>
+      <div class="filters" id="filters" role="group" aria-label="Filter photos"></div></div></section>
+    <div class="masonry" id="masonry"></div>
+  </main>
+
+  <footer class="site-footer mono"><span>© <span data-year></span> Kashan Amjad</span><a href="/">Home</a><a href="/#contact">Contact</a></footer>
+  <script src="/assets/js/common.js"></script>
+  <script>
+  (async () => {
+    const { $, $$, esc, load, header, open, fillProfile } = KA;
+    header();
+    const { profile, projects } = await load();
+    // Every project with "Show in Photography" ticked contributes its gallery.
+    const rank = { food: 0, films: 1, interiors: 2, events: 3 };
+    const sets = projects.filter((p) => p.show_in_photography && (p.stills || []).length).sort((a, b) => (rank[a.category] ?? 9) - (rank[b.category] ?? 9) || a.order - b.order);
+    const all = sets.flatMap((p) => p.stills.map((src) => ({ src, title: p.title, slug: p.slug })));
+    $("#filters").innerHTML = `<button aria-pressed="true" data-f="all">All</button>` + sets.map((p) => `<button aria-pressed="false" data-f="${esc(p.slug)}">${esc(p.title)}</button>`).join("");
+    const draw = (f) => {
+      const items = f === "all" ? all : all.filter((x) => x.slug === f);
+      $("#masonry").innerHTML = items.map((x, i) => `<button data-i="${i}"><img src="${esc(x.src)}" alt="${esc(x.title)} photograph" loading="lazy" /><span class="mono">${esc(x.title)}</span></button>`).join("");
+      $$("#masonry button").forEach((b) => (b.onclick = () => open(items, +b.dataset.i)));
+    };
+    $$("#filters button").forEach((b) => b.addEventListener("click", () => { $$("#filters button").forEach((x) => x.setAttribute("aria-pressed", x === b)); draw(b.dataset.f); }));
+    draw("all");
+    fillProfile(profile);
+  })();
+  </script>
+</body>
+</html>

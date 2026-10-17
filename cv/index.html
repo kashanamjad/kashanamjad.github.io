@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV — Kashan Amjad</title>
+  <meta name="description" content="CV of Kashan Amjad, Senior Videographer & Photographer, Dubai." />
+  <link rel="icon" href="/webicon.PNG" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    @page{size:A4;margin:0}
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{--ink:#1b1a18;--soft:#55524d;--muted:#8a867f;--line:#e2ddd5;--amber:#b8741a}
+    html{background:#d9d6d0}
+    body{font-family:"Archivo",system-ui,sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .bar{max-width:210mm;margin:24px auto 12px;display:flex;justify-content:space-between;align-items:center;font-size:14px}
+    .bar a,.bar button{font:inherit;color:#1b1a18;background:#fff;border:1px solid #c9c4bb;border-radius:999px;padding:8px 14px;text-decoration:none;cursor:pointer}
+    .sheet{width:210mm;min-height:297mm;margin:0 auto 32px;background:#fff;padding:12mm 15mm 9mm;box-shadow:0 20px 50px -20px rgba(0,0,0,.35)}
+    .mono{font-family:"JetBrains Mono",monospace;font-size:7.5pt;letter-spacing:.12em;text-transform:uppercase}
+    header{display:grid;grid-template-columns:1fr 30mm;gap:8mm;align-items:end;border-bottom:1.2pt solid var(--ink);padding-bottom:6mm}
+    h1{font-size:34pt;line-height:.9;font-weight:800;font-stretch:68%;text-transform:uppercase;letter-spacing:-.005em}
+    h1 em{font-family:"Instrument Serif",serif;font-weight:400;text-transform:none;color:var(--amber);font-size:.95em}
+    .role{font-size:11.5pt;font-weight:600;margin-top:3mm}
+    .role span{display:block;color:var(--muted);margin-top:1.5mm}
+    .contact{margin-top:3.5mm;font-size:8.5pt;color:var(--soft);display:flex;flex-wrap:wrap;gap:1.5mm 5mm}
+    .contact a{color:inherit;text-decoration:none}
+    .photo{width:30mm;height:36mm;border-radius:2mm;background:center 30%/cover no-repeat;filter:grayscale(1)}
+    .cols{display:grid;grid-template-columns:1fr 55mm;gap:8mm;margin-top:5mm}
+    h2{font-size:8pt;font-family:"JetBrains Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin:0 0 2.5mm;font-weight:500}
+    section+section{margin-top:4.5mm}
+    p,li{font-size:9pt;line-height:1.5;color:var(--soft)}
+    .job{display:grid;grid-template-columns:24mm 1fr;gap:3mm;padding:1.2mm 0;border-top:.6pt solid var(--line)}
+    .job b{font-size:10pt;color:var(--ink);font-weight:700;display:block}
+    .job .co{font-size:9pt;color:var(--ink)}
+    .job p{margin-top:.5mm;font-size:8.3pt;line-height:1.42}
+    .work{list-style:none;display:grid;grid-template-columns:1fr 1fr;column-gap:5mm}
+    .work li{padding:1.3mm 0;border-top:.6pt solid var(--line);font-size:8pt;line-height:1.35}
+    .work li b{color:var(--ink);font-weight:600;display:block;font-size:8.6pt}
+    .side ul{list-style:none}
+    .side li{padding:1.1mm 0;border-top:.6pt solid var(--line);font-size:8.6pt}
+    .side li b{color:var(--ink);font-weight:600;display:block}
+    .foot{margin-top:6mm;padding-top:3mm;border-top:.6pt solid var(--line);display:flex;justify-content:space-between;color:var(--muted)}
+    @media print{html{background:#fff}.bar{display:none}.sheet{margin:0;box-shadow:none}}
+    @media screen and (max-width:820px){.sheet{width:auto;min-height:0;margin:0 12px 24px;padding:24px 18px}.bar{margin:16px 12px}.cols,header{grid-template-columns:1fr}.photo{display:none}}
+  </style>
+</head>
+<body>
+  <div class="bar"><a href="/">← kashanamjad.com</a><span><a id="pdf" href="/cv/Kashan-Amjad-CV.pdf" download>Download PDF ↓</a> <button onclick="print()">Print</button></span></div>
+  <article class="sheet" id="cv"></article>
+  <script>
+  (async () => {
+    const esc = (s = "") => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+    const [me, pr] = await Promise.all([fetch("/content/profile.json").then((r) => r.json()), fetch("/content/projects.json").then((r) => r.json())]);
+    const work = (pr.projects || []).filter((p) => p.featured).sort((a, b) => a.order - b.order).slice(0, 8);
+    const c = me.contact, a = me.about;
+    document.getElementById("cv").innerHTML = `
+      <header>
+        <div>
+          <h1>${esc(me.name_first)} <em>${esc(me.name_last)}</em></h1>
+          <div class="role">${esc(me.title)}<span class="mono">${esc(me.subline)}</span></div>
+          <div class="contact"><a href="mailto:${esc(c.email)}">${esc(c.email)}</a><span>${esc(c.whatsapp)}</span><span>${esc(me.location)}</span><a href="https://kashanamjad.com">kashanamjad.com</a><a href="${esc(c.linkedin)}">linkedin.com/in/kashan-amjad</a></div>
+        </div>
+        <div class="photo" style="background-image:url(${esc(me.portrait)})"></div>
+      </header>
+      <div class="cols">
+        <div>
+          <section><h2>Profile</h2><p>${esc(me.intro)}</p></section>
+          <section><h2>Experience</h2>${(me.experience || []).map((x, k) => `<div class="job"><span class="mono" style="color:var(--muted);padding-top:.6mm">${esc(x.dates)}</span><div><b>${esc(x.title)}</b><span class="co">${esc(x.company)} · ${esc(x.place || "")}</span>${k < 4 && x.summary ? `<p>${esc(x.summary)}</p>` : ""}</div></div>`).join("")}</section>
+          <section><h2>Selected work</h2><ul class="work">${work.map((p) => `<li><b>${esc(p.title)}</b>${esc(p.role)} · ${esc(p.agency)}</li>`).join("")}</ul></section>
+        </div>
+        <aside class="side">
+          <section><h2>Skills</h2><ul>${(a.skills || []).map((s) => `<li><b>${esc(s.name)}</b>${esc(s.detail)}</li>`).join("")}</ul></section>
+          <section><h2>Software</h2><p>${esc((a.tools || []).join(" · "))}</p></section>
+          <section><h2>Clients</h2><p>${esc((me.worked_with || []).join(" · "))}</p></section>
+          <section><h2>Languages</h2><p>${esc(a.languages)}</p></section>
+          <section><h2>Education</h2><p>${esc(a.education)}</p></section>
+          <section><h2>Early work</h2><p>Shabab (2019) — short documentary, DW × Dawn.com #ItOnlyHappensInPakistan contest</p></section>
+        </aside>
+      </div>
+      <div class="foot mono"><span>Portfolio · kashanamjad.com</span><span>Instagram · that.filmy.guy</span></div>`;
+    document.title = `CV — ${me.name_first} ${me.name_last}`;
+    window.cvReady = true;
+  })();
+  </script>
+</body>
+</html>
