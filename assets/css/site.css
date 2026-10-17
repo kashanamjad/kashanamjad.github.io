@@ -309,3 +309,12 @@ button.hero-media{display:block;width:100%;text-align:left}
   .stage{height:calc(100% - 486px)}
   .fwins{top:calc(104px + (100% - 486px) + 10px);gap:8px}
 }
+
+/* phone intro: keep the text below the face */
+@media (max-width:860px){
+  .intro{display:block;min-height:0;padding-bottom:64px}
+  .intro .photo{position:relative;inset:auto;width:100%;height:min(58svh,520px);background-position:50% 18%}
+  .intro .photo::after{background:linear-gradient(0deg,var(--bg) 0%,rgba(23,22,21,0) 32%)}
+  .intro .copy{padding:0 20px 24px;margin-top:-36px}
+  .intro h1{margin-top:12px}
+}

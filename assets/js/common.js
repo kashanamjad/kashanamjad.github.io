@@ -3,6 +3,7 @@ const KA = (() => {
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
   const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const KA_reduced = reduced;
   const esc = (s = "") => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 
   let cache;
@@ -70,6 +71,7 @@ const KA = (() => {
       $$("a", menu).forEach((a) => a.addEventListener("click", () => set(false)));
     }
     $$("[data-year]").forEach((el) => (el.textContent = new Date().getFullYear()));
+    $$("[data-top]").forEach((a) => a.addEventListener("click", (e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: KA_reduced ? "auto" : "smooth" }); }));
     // "Back" returns to where the visitor came from on this site, otherwise home.
     $$("[data-back]").forEach((a) => a.addEventListener("click", (e) => {
       if (document.referrer && new URL(document.referrer).origin === location.origin && history.length > 1) { e.preventDefault(); history.back(); }
@@ -144,7 +146,7 @@ const KA = (() => {
   const playFilms = (p, i = 0) => open(playable(p).map((f) => ({ youtube: ytId(f.youtube), title: `${p.title} — ${f.title}`, vertical: isV(p, f) })), i);
 
   function fillProfile(profile) {
-    $$("[data-cv]").forEach((a) => (a.href = profile.cv_file || "/cv/"));
+    $$("[data-cv]").forEach((a) => { a.href = profile.cv_file || "/cv/"; a.target = "_blank"; a.rel = "noopener"; a.removeAttribute("download"); });
     const c = profile.contact || {};
     $$("[data-email]").forEach((a) => { a.href = `mailto:${c.email}`; if (a.dataset.email === "text") a.firstChild.textContent = c.email + " "; });
     $$("[data-whatsapp]").forEach((a) => (a.href = `https://wa.me/${String(c.whatsapp || "").replace(/\D/g, "")}`));
